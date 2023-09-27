@@ -32,10 +32,37 @@ client.on('ready', () => {
 
 client.initialize();
 
-// Handle your bot logic here
-client.on('message', (message) => {
-  // Handle incoming messages
-  console.log('Received message:', message.body);
+// Helper function to send a stylish menu
+function sendStylishMenu(to, userPrefix) {
+  // Customize and send your menu here
+  const menu = `
+╭───────╮
+│ My Bot Menu │
+├───────╯
+│ Available commands:
+│
+│ 1. ${userPrefix}hello: Greet the bot
+│ 2. ${userPrefix}say [text]: Make the bot say something
+│ 3. ${userPrefix}menu: Show available commands
+│
+╰─────────────╯
+`;
+  client.sendMessage(to, menu);
+}
+
+// Handle incoming messages
+client.on('message', async (message) => {
+  const { body, from, to } = message;
+  const userPrefix = '/'; // User-defined prefix, you can set it as needed
+
+  if (body === `${userPrefix}hello`) {
+    await client.sendMessage(from, `Hello! How can I assist you?`);
+  } else if (body.startsWith(`${userPrefix}say `)) {
+    const text = body.slice(`${userPrefix}say `.length);
+    await client.sendMessage(from, text);
+  } else if (body === `${userPrefix}menu`) {
+    sendStylishMenu(from, userPrefix);
+  }
 });
 
 // Handle other events and bot logic as needed
