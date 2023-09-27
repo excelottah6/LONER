@@ -1,0 +1,14 @@
+{
+  "name": "LONER",
+  "description": "Your app description",
+  "repository": "https://github.com/excelottah6/LONER",
+  "logo": "https://telegra.ph/file/53d49d33abbbd8fd6f31c.jpg",
+  "env": {
+    "NODE_ENV": "production"
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
