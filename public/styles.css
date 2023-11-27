@@ -2,7 +2,7 @@ body {
   background: linear-gradient(to right, #4e54c8, #8f94fb);
   position: relative;
   overflow: hidden;
-  margin: 0;
+  margin: 0; /* Remove default margin */
 }
 
 .container {
@@ -14,30 +14,31 @@ body {
 }
 
 .box {
-  width: 150px; 
-  height: 100px; 
-  background-color: rgba(0, 128, 0, 0.5);
+  width: 120px; /* Adjust the button size */
+  height: 60px; /* Adjust the button size */
+  background-color: #3498db; /* Blue background */
   color: white;
   text-align: center;
-  line-height: 100px;
+  line-height: 60px; /* Center the text vertically */
   margin: 10px;
-  border: 2px solid red;
-  border-radius: 10px;
+  border: 2px solid #e74c3c; /* Red border */
+  border-radius: 5px;
   cursor: pointer;
 }
 
 .box:nth-child(2) {
-  margin-left: 20px;
+  margin-left: 20px; /* Adjust spacing between the boxes */
 }
 
 body::before,
 body::after {
   content: '';
   position: absolute;
-  width: 30px; 
-  height: 30px;
-  background-color: rgba(255, 0, 0, 0.5);
-  border-radius: 0;
+  width: 120px; /* Adjust the square size */
+  height: 60px; /* Adjust the square size */
+  background-color: rgba(255, 0, 0, 0.2); /* Transparent red */
+  border: 2px solid #e74c3c; /* Red border */
+  border-radius: 5px;
   animation: floatAnimation 3s infinite alternate;
 }
 
