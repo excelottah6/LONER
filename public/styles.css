@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  text-align: center;
+  text-align: center; /* Fix position property */
 }
 
 .box {
@@ -60,7 +60,6 @@ body::before {
   height: 100vh;
 }
 
-/* Add more floating elements */
 body::before,
 body::after {
   content: '';
