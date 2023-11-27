@@ -1,5 +1,5 @@
 body {
-  background-color: purple gradient;
+  background-color: purple;
 }
 
 .container {
@@ -33,9 +33,9 @@ body::before {
   position: absolute;
   width: 10px;
   height: 10px;
-  background-color: green;
+  background-color: blue;
   border-radius: 50%;
-  animation: floatAnimation 3s infinite;
+  animation: floatAnimation 4s infinite;
   z-index: -1;
 }
 
