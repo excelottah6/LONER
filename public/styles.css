@@ -3,6 +3,7 @@ body {
   position: relative;
   overflow: hidden;
   margin: 0; /* Remove default margin */
+  height: 100vh; /* Make sure the body takes the full height of the viewport */
 }
 
 .container {
@@ -50,4 +51,12 @@ body::after {
 
 @keyframes floatAnimation {
   0% {
-    transform: translate
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
