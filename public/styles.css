@@ -3,7 +3,7 @@ body {
 }
 
 .container {
-  position: text-align: center;
+  text-align: center;
 }
 
 .box {
@@ -28,6 +28,7 @@ body {
   top: 50px;
   right: 50px;
 }
+
 body::before {
   content: '';
   position: absolute;
@@ -49,7 +50,7 @@ body::before {
   100% {
     transform: translate(0, 0);
   }
-} 
+}
 
 .container {
   display: flex;
