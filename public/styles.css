@@ -1,9 +1,9 @@
 body {
-  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  background: linear-gradient(to right, #3498db, #8f94fb);
   position: relative;
   overflow: hidden;
-  margin: 0; /* Remove default margin */
-  height: 100vh; /* Make sure the body takes the full height of the viewport */
+  margin: 0;
+  height: 100vh;
 }
 
 .container {
@@ -15,15 +15,13 @@ body {
 }
 
 .box {
-  width: 100px; /* Adjust the button size */
-  height: 40px; /* Adjust the button size */
-  background-color: #3498db; /* Blue background */
+  width: 100px;
+  height: 40px;
+  background-color: #3498db;
   color: white;
   text-align: center;
-  line-height: 40px; /* Center the text vertically */
+  line-height: 40px;
   margin: 10px;
-  border: 2px solid #e74c3c; /* Red border */
-  border-radius: 5px;
   cursor: pointer;
 }
 
@@ -31,10 +29,9 @@ body::before,
 body::after {
   content: '';
   position: absolute;
-  width: 100px; /* Adjust the square size */
-  height: 40px; /* Adjust the square size */
-  background-color: rgba(255, 0, 0, 0.2); /* Transparent red */
-  border: 2px solid #e74c3c; /* Red border */
+  width: 100px;
+  height: 40px;
+  background-color: rgba(255, 0, 0, 0.2);
   border-radius: 5px;
   animation: floatAnimation 3s infinite alternate;
 }
@@ -59,4 +56,31 @@ body::after {
   100% {
     transform: translate(0, 0);
   }
+}
+
+.decor-1,
+.decor-2,
+.decor-3 {
+  content: '';
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  animation: floatAnimation 4s infinite alternate;
+}
+
+.decor-1 {
+  top: 10%;
+  left: 10%;
+}
+
+.decor-2 {
+  top: 80%;
+  left: 80%;
+}
+
+.decor-3 {
+  top: 40%;
+  left: 60%;
 }
