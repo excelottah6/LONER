@@ -14,20 +14,16 @@ body {
 }
 
 .box {
-  width: 50px; /* Adjust the button size */
-  height: 30px; /* Adjust the button size */
+  width: 100px; /* Adjust the button size */
+  height: 40px; /* Adjust the button size */
   background-color: #3498db; /* Blue background */
   color: white;
   text-align: center;
-  line-height: 50px; /* Center the text vertically */
+  line-height: 40px; /* Center the text vertically */
   margin: 10px;
   border: 2px solid #e74c3c; /* Red border */
   border-radius: 5px;
   cursor: pointer;
-}
-
-.box:nth-child(2) {
-  margin-left: 20px; /* Adjust spacing between the boxes */
 }
 
 body::before,
@@ -35,7 +31,7 @@ body::after {
   content: '';
   position: absolute;
   width: 100px; /* Adjust the square size */
-  height: 50px; /* Adjust the square size */
+  height: 40px; /* Adjust the square size */
   background-color: rgba(255, 0, 0, 0.2); /* Transparent red */
   border: 2px solid #e74c3c; /* Red border */
   border-radius: 5px;
@@ -54,12 +50,4 @@ body::after {
 
 @keyframes floatAnimation {
   0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, 20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
+    transform: translate
