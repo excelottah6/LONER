@@ -1,5 +1,5 @@
 body {
-  background-color: yellow;
+  background-color: purple gradient;
 }
 
 .container {
@@ -27,4 +27,26 @@ body {
 .box:nth-child(2) {
   top: 50px;
   right: 50px;
+}
+body::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  animation: floatAnimation 3s infinite;
+  z-index: -1;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
