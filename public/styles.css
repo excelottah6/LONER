@@ -25,12 +25,11 @@ body {
   cursor: pointer;
 }
 
-.box:nth-child(4),
-.box:nth-child(5),
-.box:nth-child(6) {
-  background-color: #2ecc71;
+.border-container {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
   display: inline-block;
-  margin: 5px;
 }
 
 .typing-text {
@@ -78,14 +77,6 @@ body {
   left: 60%;
 }
 
-.border-container {
-  border: 2px solid white;
-  border-radius: 10px;
-  padding: 10px;
-  display: inline-block;
-}
-
-
 .picture {
   margin-top: 20px;
   max-width: 100%;
@@ -93,3 +84,43 @@ body {
   border-radius: 10px;
 }
 
+body::before,
+body::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+  border-radius: 50%;
+  animation: floatAnimation 3s infinite alternate;
+}
+
+body::before {
+  top: 20px;
+  left: 20px;
+}
+
+body::after {
+  bottom: 20px;
+  right: 20px;
+}
+
+body::before,
+body::after,
+.decor-1,
+.decor-2,
+.decor-3 {
+  display: block;
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
