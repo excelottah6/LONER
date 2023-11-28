@@ -1,7 +1,5 @@
 body {
   background: linear-gradient(to right, #3498db, #8f94fb);
-  position: relative;
-  overflow: hidden;
   margin: 0;
   height: 100vh;
 }
@@ -12,9 +10,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: white;
 }
 
-.box {
+.button {
   width: 100px;
   height: 40px;
   background-color: #2ecc71;
@@ -34,7 +33,6 @@ body {
 
 .typing-text {
   font-size: 24px;
-  color: white;
   margin-bottom: 20px;
 }
 
