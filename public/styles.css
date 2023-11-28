@@ -35,92 +35,11 @@ body {
 .typing-text {
   font-size: 24px;
   color: white;
-  overflow: hidden;
-  white-space: nowrap;
-  border-right: 2px solid white;
-  animation: typing 3s steps(30) infinite;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-.decor-1,
-.decor-2,
-.decor-3 {
-  content: '';
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.2);
-  animation: floatAnimation 4s infinite alternate;
-}
-
-.decor-1 {
-  top: 10%;
-  left: 10%;
-}
-
-.decor-2 {
-  top: 80%;
-  left: 80%;
-}
-
-.decor-3 {
-  top: 40%;
-  left: 60%;
+  margin-bottom: 20px;
 }
 
 .picture {
-  margin-top: 20px;
   max-width: 100%;
   height: auto;
   border-radius: 10px;
-}
-
-body::before,
-body::after {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background-color: green;
-  border-radius: 50%;
-  animation: floatAnimation 3s infinite alternate;
-}
-
-body::before {
-  top: 20px;
-  left: 20px;
-}
-
-body::after {
-  bottom: 20px;
-  right: 20px;
-}
-
-body::before,
-body::after,
-.decor-1,
-.decor-2,
-.decor-3 {
-  display: block;
-}
-
-@keyframes floatAnimation {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(20px, 20px);
-  }
-  100% {
-    transform: translate(0, 0);
-  }
 }
