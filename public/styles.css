@@ -1,5 +1,5 @@
 body {
-  background-color: azure;
+  background: linear-gradient(to right, #3498db, #8f94fb);
   margin: 0;
   height: 100vh;
   display: flex;
@@ -36,3 +36,4 @@ body {
   height: auto;
   border-radius: 10px;
 }
+
