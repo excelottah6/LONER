@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(to right, #3498db, #8f94fb);
+  background-color: azure;
   margin: 0;
   height: 100vh;
   display: flex;
@@ -9,7 +9,7 @@ body {
 
 .container {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 .button {
@@ -30,10 +30,3 @@ body {
   font-size: 24px;
   margin-bottom: 20px;
 }
-
-.picture {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
