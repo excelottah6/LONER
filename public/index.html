@@ -1,71 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IZUKU-MD</title>
-  <style>
-    body {
-      background-color: black;
-      color: white;
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="utf-8">
+    <title>My Webpage</title>
+    <style>
+        body {
+            /* Center the elements on the screen */
+            margin: 0 auto;
 
-    .container {
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
+            background-image: url("https://picsum.photos/200/300");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
 
-    h1 {
-      font-size: 48px;
-      margin-bottom: 0;
-    }
+            /* Add decorations */
+            background-image: linear-gradient(to bottom, #fff 0%, #ccc 100%);
+            background-image: repeating-linear-gradient(45deg, #fff, #ccc 10px);
+        }
 
-    p {
-      font-size: 24px;
-      margin-top: 0;
-    }
+        .container {
+            /* Center the container on the screen */
+            margin: 0 auto;
+            width: 500px;
+        }
 
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+        .box {
+            /* Center the boxes on the screen */
+            margin: 0 auto;
+            float: none;
+            width: 200px;
+            height: 200px;
+        }
 
-    .buttons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 24px;
-    }
+        .button {
+            /* Set the button background color */
+            background-color: #62b1d0;
 
-    .button {
-      background-color: green;
-      color: white;
-      padding: 16px;
-      border-radius: 4px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-  </style>
+            /* Set the button color */
+            color: #fff;
+
+            /* Set the button text decoration */
+            text-decoration: none;
+
+            /* Set the button border */
+            border: none;
+
+            /* Set the button padding */
+            padding: 14px 16px;
+
+            /* Set the button border radius */
+            border-radius: 4px;
+
+            /* Add a shadow to the button */
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+
+            /* Center the buttons inside the boxes */
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>IZUKU-MD</h1>
-    <p>Hello There</p>
-    <p>This is izuku-MD</p>
-    <p>A Premium WhatsApp</p>
-    <p>Bot</p>
-    <img src="https://telegra.ph/file/41eddce465f198dd2da85.jpg" alt="IZUKU-MD">
-    <div class="buttons">
-      <button class="button">SCAN QR</button>
-      <button class="button">REPO</button>
-      <button class="button">REPLIT</button>
-      <button class="button">HEROKU</button>
-      <button class="button">YOUTUBE</button>
+    <div class="container">
+        <h2>My Webpage</h2>
+        <div class="box">
+            <a href="https://www.google.com" class="button">Google</a>
+        </div>
+        <div class="box">
+            <a href="https://www.youtube.com" class="button">YouTube</a>
+        </div>
+        <div class="box">
+            <a href="https://www.facebook.com" class="button">Facebook</a>
+        </div>
     </div>
-  </div>
 </body>
 </html>
