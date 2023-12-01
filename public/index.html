@@ -2,11 +2,12 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>IZUKU MD</title>
+  <title>My Webpage</title>
   <style>
     body {
       height: 100vh;
       background-color: purple;
+      /* Add floating effects */
       animation: particles 5s linear infinite;
     }
 
@@ -30,13 +31,34 @@
       text-align: center;
     }
 
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+
     .box {
+      position: absolute;
       width: 200px;
       height: 200px;
       background-color: #fff;
       border: 1px solid #000;
-      margin: 20px;
-      float: none;
+      opacity: 0.5;
+    }
+
+    .box1 {
+      top: 50px;
+      left: 50px;
+    }
+
+    .box2 {
+      top: 50px;
+      right: 50px;
+    }
+
+    .box3 {
+      bottom: 50px;
+      left: 50px;
     }
 
     .button {
@@ -52,15 +74,22 @@
 </head>
 <body>
   <div class="container">
-    <h2>IZUKU MD</h2>
-    <div class="box">
-      <a href="https://www.google.com" class="button">REPO</a>
+    <h2>My Webpage</h2>
+
+    <div class="box box1">
+      <a href="https://www.google.com" class="button">BOT REPO</a>
     </div>
-    <div class="box">
+    <div class="box box2">
       <a href="https://www.youtube.com" class="button">QR</a>
     </div>
-    <div class="box">
-      <a href="https://www.facebook.com" class="button">OWNER</a>
+    <div class="box box3">
+      <a href="https://www.facebook.com" class="button">DEPLOY</a>
+    </div>
+
+    <div class="buttons">
+      <a href="https://www.google.com" class="button">BOT REPO</a>
+      <a href="https://www.youtube.com" class="button">QR</a>
+      <a href="https://www.facebook.com" class="button">DEPLOY</a>
     </div>
   </div>
 </body>
