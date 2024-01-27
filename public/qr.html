@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR CODE GENERATOR</title>
+    <link rel="shortcut icon" href="https://i.imgur.com/3jmBwdQ.jpeg" type="image/x-icon" />
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #f0f3f8; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            text-align: center;
+            padding: 20px;
+            background-color: #fff; 
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+            max-width: 80%; 
+        }
+
+        .code_1 {
+            border: 2px solid #62b1d0;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            max-width: 90%; 
+        }
+
+        .title {
+            font-size: 24px; 
+            font-weight: bold;
+            color: #62b1d0;
+            margin: 10px 0;
+        }
+
+        .legend {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="code">
+        <div class="card">
+            <img id="qr-code" class="code_1" src="https://web-qr-ba022fb78e76.herokuapp.com" alt="MD QR" title="Scan the QR code to connect with WhatsApp Multi Device">
+            <h1 class="title">IZUKU-MD QR </h1>
+            <p class="legend">POWERED BY VOID 🫶 thanks to suhail</p>
+        </div>
+    </main>
+</body>
+</html>
