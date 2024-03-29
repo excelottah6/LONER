@@ -38,7 +38,8 @@
 
         .buttons {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            flex-wrap: wrap; 
             margin-top: 20px;
         }
 
@@ -50,9 +51,9 @@
             padding: 10px 16px; 
             border-radius: 10px;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-            margin: 0 10px;
+            margin: 10px; 
             display: inline-block;
-            width: 100px;
+            width: auto; 
             height: 40px; 
             text-align: center;
             transition: background-color 0.3s ease-in-out;
@@ -76,9 +77,12 @@
     <div class="container">
         <div class="text" id="typingText"></div>
         <div class="buttons">
-            <a href="https://www.github.com/excelottah6/IZUKU-MD" class="button">REPO</a>
-            <a href="https://www.heroku.com/deploy?template=https://github.com/excelottah6/IZUKU-MD" class="button">DEPLOY</a>
-            <button class="button" onclick="openQrPage()">QR</button>
+            <button onclick="openPairPage()" class="button">Pair Code</button>
+            <button onclick="window.open('https://github.com/excelottah6/IZUKU-MD')" class="button">GitHub</button>
+            <button onclick="window.open('https://www.heroku.com/deploy?template=https://github.com/excelottah6/IZUKU-MD')" class="button">Deploy</button>
+            <button onclick="openQrPage()" class="button">QR</button>
+            <button onclick="window.open('https://t.me/xeonbotinc')" class="button">Telegram</button>
+            <button onclick="window.open('https://www.instagram.com/unicorn_xeon13')" class="button">Instagram</button>
         </div>
     </div>
 
@@ -96,8 +100,13 @@
             }
         }
         typeText();
+        
         function openQrPage() {
             window.open('./qr.html', '_blank');
+        }
+
+        function openPairPage() {
+            window.open('./paircode.html', '_blank');
         }
     </script>
 <script type="text/javascript">
