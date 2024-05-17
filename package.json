@@ -1,12 +1,12 @@
 {
     "description": "whatsapp pair code generator by EXCEL THANKS TO DGXEON",
-    "main": "./index.js",
+    "main": "./server.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
