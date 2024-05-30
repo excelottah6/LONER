@@ -1,5 +1,5 @@
 {
-    "description": "whatsapp pair code generator by EXCEL THANKS TO DGXEON",
+    "description": "whatsapp pair code generator by charuka",
     "main": "./server.js",
   "engines" : { 
     "npm" : ">=9.7.2",
